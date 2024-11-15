@@ -158,26 +158,26 @@ p {
 
 /* Responsividad para dispositivos pequeños */
 @media (max-width: 768px) {
-    .welcome-container {
-        padding: 3rem;
-        width: 90%; /* Más ancho en pantallas pequeñas */
-    }
+    .bienvenida-contenedor {
+        padding: 2rem;
+        width: 90%;
     
-    .welcome-container h1 {
+    .bienvenida-container h1 {
         font-size: 2rem; /* Título un poco más pequeño */
     }
 
-    .welcome-logo {
-        width: 40vw;
-        max-width: 120px;
+    .bienvenida-logo {
+        width: 50vw;
+        max-width: 150px;
     }
 
-    .welcome-container p {
+    .bienvenida-container p {
         font-size: 1rem; /* Tamaño de texto reducido */
     }
 
     .btn-ingreso {
         font-size: 1.2rem; /* Tamaño de texto del botón */
+        padding: 0.8rem 1.5rem;
     }
 
     .team {
