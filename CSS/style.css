@@ -76,7 +76,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px; /* Espaciado entre los elementos de la navegación */
+    margin: 0 10px; /* Espaciado entre los elementos de la navegación */
 }
 
 nav ul li a {
@@ -97,8 +97,8 @@ nav ul li a:hover {
 }
 
 .section {
-    padding: 2rem;
-    margin: 2rem;
+    padding: 1rem;
+    margin: 1rem;
     background-color: #ffffff;
 }
 
