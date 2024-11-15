@@ -60,13 +60,6 @@ body {
     background-color: #ffffff;
 }
 
-header nav {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    gap: 1rem; 
-}
-
 header {
     flex-direction: column; /* Organiza el contenido en columnas */
     align-items: center; /* Centra el contenido */
@@ -76,6 +69,18 @@ header {
     text-align: center;
     color: white;
 }
+header img {
+    max-width: 200px; /* Tamaño máximo del logo */
+    height: auto; /* Mantiene las proporciones */
+    margin: 0 auto; /* Centra el logo dentro del header */
+}
+header nav {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 1rem; 
+}
+
 
 nav ul {
     list-style: none;
@@ -412,8 +417,12 @@ section input, section textarea {
         width: 40%; /* Ocupa el 40% del ancho disponible */
     }
 
+    header img {
+        max-width: 150px; /* Reduce el tamaño máximo del logo en pantallas pequeñas */
+    }
+
     header {
-        padding: 1rem;
+        padding: 1rem; /* Reduce el relleno del header */
     }
 }
 
