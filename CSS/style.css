@@ -29,7 +29,7 @@
 
 .bienvenida-logo {
     width: 40vw; /* Esto quiero que sea el ajuste del Tamaño del logo en la pantalla de bienvenida */
-    max-width: 140px;
+    max-width: 100px;
     margin-bottom: 2rem;
 }
 
@@ -156,38 +156,6 @@ p {
     font-size: 1.2rem; /* Tamaño de la letra más grande */
 }
 
-/* Responsividad para dispositivos pequeños */
-@media (max-width: 768px) {
-    .bienvenida-contenedor {
-        padding: 2rem;
-        width: 90%;
-    
-    .bienvenida-contenedor h1 {
-        font-size: 2rem; /* Título un poco más pequeño */
-    }
-
-    .bienvenida-logo {
-        width: 50vw;
-        max-width: 150px;
-    }
-
-    .bienvenida-contenedor p {
-        font-size: 1rem; /* Tamaño de texto reducido */
-    }
-
-    .btn-ingreso {
-        font-size: 1.2rem; /* Tamaño de texto del botón */
-        padding: 0.8rem 1.5rem;
-    }
-
-    .team {
-        flex-direction: column; /* Las tarjetas se apilan verticalmente, chequear otras opciones. */
-        align-items: center; /* tarjetas centradas */
-    }
-
-    .member {
-        width: 40%; /* Ocupa el 40% del ancho disponible */
-    }
 }
 /* Título de características y de módulos*/
 .titulo-caracteristicas {
@@ -400,3 +368,68 @@ section input, section textarea {
 .centrado {
     text-align: center;
 }
+
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 768px) {
+    .bienvenida-contenedor {
+        padding: 2rem;
+        width: 90%;
+    
+    .bienvenida-contenedor h1 {
+        font-size: 2rem; /* Título un poco más pequeño */
+    }
+
+    .bienvenida-logo {
+        width: 50vw;
+        max-width: 150px;
+    }
+
+    .bienvenida-contenedor p {
+        font-size: 1rem; /* Tamaño de texto reducido */
+    }
+
+    .btn-ingreso {
+        font-size: 1.2rem; /* Tamaño de texto del botón */
+        padding: 0.8rem 1.5rem;
+    }
+
+    .team {
+        flex-direction: column; /* Las tarjetas se apilan verticalmente, chequear otras opciones. */
+        align-items: center; /* tarjetas centradas */
+    }
+
+    .member {
+        width: 40%; /* Ocupa el 40% del ancho disponible */
+    }
+
+    @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Los elementos del menú se apilan verticalmente */
+        align-items: center; /* Centra el menú */
+        gap: 1rem; /* Espacio entre enlaces */
+    }
+
+    nav ul li {
+        margin: 0; /* Elimina márgenes horizontales */
+        width: 100%; /* Asegura que ocupen todo el ancho */
+    }
+
+    nav ul li a {
+        padding: 10px; /* Espacio interno para que sean más fáciles de tocar */
+        text-align: center; /* Centra el texto de los enlaces */
+        border: none; /* Puedes ajustar el estilo aquí si no quieres bordes */
+    }
+}
+
+/* Opcional: oculta el menú por defecto en pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Botón hamburguesa aparece */
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: white;
+        background-color: transparent;
+        border: none;
+        margin: 10px;
+        position: relative;
+    }
