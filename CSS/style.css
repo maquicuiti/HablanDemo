@@ -29,7 +29,7 @@
 
 .bienvenida-logo {
     width: 40vw; /* Esto quiero que sea el ajuste del Tamaño del logo en la pantalla de bienvenida */
-    max-width: 280px;
+    max-width: 140px;
     margin-bottom: 2rem;
 }
 
