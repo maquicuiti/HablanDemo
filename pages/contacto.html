@@ -27,12 +27,13 @@
 
 <section>
     <h3 class="titulo-nuestro-equipo">Contactános</h3>
-    <form action="#">
-        <form action="#">
-            <label for="name">Nombre:</label><br>
-            <input type="text" id="name" name="name"><br>
+    <form action="#" method="post">
+            <label for="name">Nombre [*]:</label><br>
+            <input type="text" id="name" name="name" size="10" maxlength="20" required><br>
+            <label for="name">Apellido [*]:</label><br>
+            <input type="text" id="surname" name="name" size="10" maxlength="20" required><br>
             <label for="email">Correo Electrónico:</label><br>
-            <input type="email" id="email" name="email"><br>
+            <input type="email" id="email" name="email" size="10" maxlength="20" required><br>
             <label for="message">Mensaje:</label><br>
             <textarea id="message" name="message" rows="4"></textarea><br>
             <button type="submit">Enviar</button>
